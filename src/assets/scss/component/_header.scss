@@ -3,11 +3,17 @@ header{
         background-color: $primary-color;
         .navbar-brand{
             color: white;
+            @media (max-width: 768px) { 
+                font-size: 0.9em;
+            }
         }
         .navbar-text{
             color: rgba(white, 0.5);
             > a{
                 color: rgba(white, 1);
+            }
+            @media (max-width: 768px) { 
+                font-size: 0.75em;
             }
         }
     }
