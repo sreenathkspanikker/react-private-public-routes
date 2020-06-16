@@ -5,12 +5,14 @@ I'm created a `publicRoute` & `prvateRoute` for user authentification, Private r
 
 Please note: You need to be using React >= 16.8 in order to use any of these hooks!
 
-- [`useHistory`](#usehistory)
-- [`useLocation`](#uselocation)
-- [`useParams`](#useparams)
-- [`useRouteMatch`](#useroutematch)
+- [`mainRoute`](#mainRoute)
+- [`privateRoute`](#privateRoute)
+- [`publicRoute`](#publicRoute)
+- [`authentication`](#authentication)
+- [`projectInstallation`](#projectInstallation)
+- [`loginCredentials`](#loginCredentials)
 
-<a id="usehistory" />
+<a id="mainRoute" />
 
 ## `mainRoute`
 
@@ -52,6 +54,8 @@ function AppRouter() {
 export default AppRouter;
 ```
 
+<a id="privateRoute">
+
 ## `privateRoute`
 
 Private route allowes you only the page logged in.
@@ -70,6 +74,8 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 export default PrivateRoute;
 ```
 
+<a id="publicRoute">
+
 ## `publicRoute`
 
 Public route no need for the authentification it call access without login.
@@ -87,6 +93,8 @@ const PublicRoute = ({ component: Component, restricted, ...rest }) => (
 
 export default PublicRoute;
 ```
+
+<a id="authentication">
 
 ## `authentication`
 
@@ -112,7 +120,10 @@ export const isLogin = () => {
 }
 
 ```
-## `Project Installation`
+
+<a id="authentication">
+
+## `projectInstallation`
 
 To install the project in your local device.
 
@@ -120,7 +131,9 @@ To install the project in your local device.
 - `npm install / yarn add`
 - `npm start / yarn start `
 
-## `Login Credentials`
+<a id="loginCredentials">
+
+## `loginCredentials`
 
 - `username: user`
 - `password: password`
