@@ -1,4 +1,4 @@
-# Private & public routes with react-dom router with hooks
+# React-dom-router private & public routes with hooks.
 
 React Router ships with a few [hooks](https://reactjs.org/docs/hooks-intro.html) that let you access the state of the router and perform navigation from inside your components.
 I'm created a `publicRoute` & `prvateRoute` for user authentification, Private routes priotect with auth token PPublic routes are access without any authentication`.
