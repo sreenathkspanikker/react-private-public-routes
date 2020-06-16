@@ -22,7 +22,6 @@ function AppRouter() {
           <PrivateRoute component={PageTwo} path="/page-2" exact />
 
           <PrivateRoute component={NoMatch} path="*" />
-          <PublicRoute component={NoMatch} path="*" />
 
         </Switch>
       </UserContext.Provider>
