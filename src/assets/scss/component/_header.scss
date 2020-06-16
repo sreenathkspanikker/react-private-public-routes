@@ -1,0 +1,14 @@
+header{
+    .navbar {
+        background-color: $primary-color;
+        .navbar-brand{
+            color: white;
+        }
+        .navbar-text{
+            color: rgba(white, 0.5);
+            > a{
+                color: rgba(white, 1);
+            }
+        }
+    }
+}

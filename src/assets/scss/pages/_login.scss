@@ -1,0 +1,17 @@
+.app-login{
+
+    .container-fluid{
+        @include flex(center, center);
+        position: relative;
+        min-height: 100vh;
+        .ant-form{
+            width: 100%;
+            max-width: 385px;
+            .ant-btn-primary{
+                width: 100%;
+             }
+    
+        }
+    }
+
+}

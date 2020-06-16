@@ -1,0 +1,81 @@
+// FONT FAMILY
+@mixin font-family($font, $size, $color, $font-weight, $line-height) {
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+// CENTER ELEMENT
+@mixin centerElement {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+// FLEX
+@mixin flex($align-items, $justify-content) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+// ANIMATED
+@mixin animation($time, $delay, $name) {
+  -webkit-animation-duration: $time;
+  animation-duration: $time;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}
+
+// POSTION
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+
+// BACKGROUND
+@mixin background($img, $repeat, $size, $position,) {
+  background-image: url($img);
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+// HOVER & ACTIVE
+@mixin hover-active {
+  &:hover {
+    @content;
+  }
+  &:active {
+    @content;
+  }
+}
+
+//PLACEHOLDER
+@mixin placeholder {
+  ::-webkit-input-placeholder {  @content; }
+  :-ms-input-placeholder {  @content;}
+  ::placeholder { @content; }
+}
+
+// CARD
+@mixin card {
+  border: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+}
+
